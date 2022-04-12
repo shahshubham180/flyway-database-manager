@@ -1,6 +1,3 @@
-CREATE TABLE book (book_id INT NOT NULL, author VARCHAR(45) NULL, book_name VARCHAR(45) NULL,
-  publisher VARCHAR(45) NULL, PRIMARY KEY (book_id));
-  
 CREATE TABLE customer (
   cust_id INT NOT NULL,
   age VARCHAR(45) NULL,

@@ -1,9 +1,12 @@
 spring:
   application:
-    name: flyway-database-manager
+    name: flywaydatabasemanager
+  datasource:
+    username: ${JDBC_DATABASE_USERNAME}
+    url: ${JDBC_DATABASE_URL}
+    password: ${JDBC_DATABASE_PASSWORD}
   jpa:
-    hibernate:
-      ddl-auto: none
+    generate-ddl: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
