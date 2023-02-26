@@ -1,0 +1,1 @@
+Alter table book ADD column genre varchar(255);

@@ -14,25 +14,17 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="customer")
-public class Customer {
+@Table(name="book")
+public class Book {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long custId;
-	
-	private String firstName;
-	
-	private String lastName;
-	
-	private String email;
-	
-	private Long age;
-	
 	private Long bookId;
 	
 	private String bookName;
 	
-	private String plantype;
-
+	private String author;
+	
+	private String publisher;
+	
 }

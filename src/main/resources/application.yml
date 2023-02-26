@@ -2,9 +2,9 @@ spring:
   application:
     name: flywaydatabasemanager
   datasource:
-    username: ${JDBC_DATABASE_USERNAME}
-    url: ${JDBC_DATABASE_URL}
-    password: ${JDBC_DATABASE_PASSWORD}
+    username: root
+    url: jdbc:mysql://mysqldb:3306/customerportallibrary
+    password: root
   jpa:
     generate-ddl: true
     properties:
@@ -13,3 +13,6 @@ spring:
   flyway:
     baseline-on-migrate: true
     locations: classpath:db/migration
+ 
+server:
+  port: 8082
