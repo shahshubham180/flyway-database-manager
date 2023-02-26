@@ -1,1 +1,1 @@
-ALTER TABLE BOOK ADD COLUMN GENRE VARCHAR(255);
+alter table book ADD column genre varchar(255);
